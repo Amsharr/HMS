@@ -1,0 +1,40 @@
+/*common */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #31A0F6;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.mt-20px{
+    margin-top: 20px;
+}
+.border{
+    border-right: 1px solid rgb(255 255 255 / 0.4);
+}
+/* my profile button*/
+.btn-blue{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid #31A0F6;
+    box-shadow: 0 0 0 4em #31A0F6 inset;
+    transition: all 350ms ease;
+}
+.btn-blue i{
+    margin-right: 6px;
+}
+.btn-blue:hover{
+    box-shadow: 0 0 0 0 #31A0F6 inset;
+    background: #fff;
+    color: #31A0F6;
+}
+.btn-transparent{
+    border: 1px solid #fff;
+}
