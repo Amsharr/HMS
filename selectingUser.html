@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Arogya</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./system/plugins/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="./css/loginpage.css">
+
+</head>
+    <header>
+        <!--logo-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 border">
+                    <div class="logo border">
+                        <a href="index.html">
+                           <img src="./assets/img/logo.png" alt="logo" height="80px" width="80px">
+                        </a>
+                    </div>
+                    <!--menu-->
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="index.php">home</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">About us</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Services</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pharmacy</a>
+                            </li>
+                            <li>
+                                <a href="register.php">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--search and location-->
+                <div class="col-md-2">
+                    <div class="header-social text-center">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">                                  
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--banner-->
+    <section class="banner" style="background-image: url(./assets/img/login.jpg)">
+        <div class="container">
+            
+            <div class="service">
+                <!-- patients login page -->
+                <a href="patientsLogin.php">
+                    <div class="service-content">
+                        Patients
+                    </div>
+                    <div class="service-btn">
+                        <i class="fas fa-arrow-right"></i>                 
+                    </div>
+                    <div class="service-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </a>
+                <!-- doctors login page -->
+                <a href="doctorsLogin.php">
+                    <div class="service-content">
+                        Doctors
+                    </div>
+                    <div class="service-btn">
+                        <i class="fas fa-arrow-right"></i>                 
+                    </div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                </a>
+                <!-- admin login page -->
+                <a href="adminLogin.php">
+                    <div class="service-content">
+                        Admin
+                    </div>
+                    <div class="service-btn">              
+                        <i class="fas fa-arrow-right"></i>                 
+                    </div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>                   
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //scroll bar
+        var header = document.getElementsByTagName("header");
+        window.onscroll = function () {scrollFunction()};
+
+        function scrollFunction(){
+            if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+                header[0].setAttribute("class", "header-active");
+            }
+            else{
+                header[0].removeAttribute("class")
+            }
+        }
+
+    </script>
+</html>
